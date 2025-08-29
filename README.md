@@ -191,4 +191,19 @@ INSERT INTO bookings (booking_id, property_id, guest_id, start_date, end_date, s
 VALUES
     ('7c4d0e3e-5f60-47b8-9234-6af8g9d0e234', '6b3b9c2d-4e5f-46a7-9123-59e7f8c9d123', '550e8400-e29b-41d4-a716-446655440000', '2025-09-10', '2025-09-15', 'confirmed', CURRENT_TIMESTAMP),
     ('7c4d0e3e-5f60-47b8-9234-6af8g9d0e235', '6b3b9c2d-4e5f-46a7-9123-59e7f8c9d124', '550e8400-e29b-41d4-a716-446655440002', '2025-10-05', '2025-10-10', 'pending', CURRENT_TIMESTAMP),
-    ('7c4d0e3e-5f60-47b8-9234-6af8g9d0e236', '6b3b9c2d-4e5f-46a7-9123-59e7f8c9d125', '550
+    ('7c4d0e3e-5f60-47b8-9234-6af8g9d0e236', '6b3b9c2d-4e5f-46a7-9123-59e7f8c9d125', '550e8400-e29b-41d4-a716-446655440000', '2025-11-15', '2025-11-20', 'canceled', CURRENT_TIMESTAMP);
+
+-- Insert payments
+INSERT INTO payments (payment_id, booking_id, user_id, amount, currency, status, created_at)
+VALUES
+    ('8d5e1f4f-6g71-48c9-9345-7bg9h0e1f345', '7c4d0e3e-5f60-47b8-9234-6af8g9d0e234', '550e8400-e29b-41d4-a716-446655440000', 750.00, 'USD', 'completed', CURRENT_TIMESTAMP),
+    ('8d5e1f4f-6g71-48c9-9345-7bg9h0e1f346', '7c4d0e3e-5f60-47b8-9234-6af8g9d0e235', '550e8400-e29b-41d4-a716-446655440002', 1000.00, 'USD', 'pending', CURRENT_TIMESTAMP),
+    ('8d5e1f4f-6g71-48c9-9345-7bg9h0e1f347', '7c4d0e3e-5f60-47b8-9234-6af8g9d0e236', '550e8400-e29b-41d4-a716-446655440000', 600.00, 'USD', 'refunded', CURRENT_TIMESTAMP);
+
+-- Insert reviews
+INSERT INTO reviews (review_id, booking_id, user_id, property_id, rating, comment, created_at)
+VALUES
+    ('9e6f2g5g-7h82-49d0-a456-8ch0i1f2g456', '7c4d0e3e-5f60-47b8-9234-6af8g9d0e234', '550e8400-e29b-41d4-a716-446655440000', '6b3b9c2d-4e5f-46a7-9123-59e7f8c9d123', 4, 'Great beach view!', CURRENT_TIMESTAMP),
+    ('9e6f2g5g-7h82-49d0-a456-8ch0i1f2g457', '7c4d0e3e-5f60-47b8-9234-6af8g9d0e235', '550e8400-e29b-41d4-a716-446655440002', '6b3b9c2d-4e5f-46a7-9123-59e7f8c9d124', 5, 'Very clean.', CURRENT_TIMESTAMP);" > database-script-0x02/seed.sql
+
+echo "Success: All files created in alx-airbnb-database."
