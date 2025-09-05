@@ -3,8 +3,6 @@
 echo "# Database Normalization
 This file explains the steps taken to normalize the Airbnb database to Third Normal Form (3NF).
 
-See [normalization.md](normalization.md) for details." > database-script-0x01/README.md
-
 # 2. Database Schema (DDL)
 echo "# Database Schema (DDL)
 This directory contains SQL scripts to define the Airbnb database schema including tables, primary keys, foreign keys, and indexes.
