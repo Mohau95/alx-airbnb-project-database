@@ -1,4 +1,4 @@
--- Schema for ALX Airbnb-like project (PostgreSQL)
+ALX Airbnb-like project
 -- Save as: database-script-0x01/schema.sql
 
 -- Make idempotent and enable UUID generator (pgcrypto)
