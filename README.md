@@ -1,21 +1,4 @@
 # alx-airbnb-project-database
-#!/bin/bash
-
-# Create directories
-mkdir -p ERD database-script-0x01 database-script-0x02
-
-# Move ER Diagram PNG (replace <path-to-er-diagram> with actual path)
-# Example: mv ~/Downloads/er-diagram.png ERD/
-mv <path-to-er-diagram>/er-diagram.png ERD/
-
-# Create README files
-
-# 0. ER Diagram
-echo "# ER Diagram
-This directory contains the Entity-Relationship diagram for the Airbnb database.
-
-![ER Diagram](er-diagram.png)" > ERD/README.md
-
 # 1. Database Normalization
 echo "# Database Normalization
 This file explains the steps taken to normalize the Airbnb database to Third Normal Form (3NF).
