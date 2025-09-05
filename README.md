@@ -447,21 +447,3 @@ VALUES
 INSERT INTO reviews (booking_id, property_id, reviewer_id, rating, comment)
 VALUES
   (:'id_10', :'id_1', :'id_2', 5, 'Amazing loft, spotless and great location!');
-```
-
----
-
-# Notes for Manual QA Review (what to check)
-
-* ERD matches the schema: field names, cardinalities, and constraints align.
-* `normalization.md` clearly states 1NF/2NF/3NF compliance with trade‑offs.
-* `schema.sql` runs cleanly on PostgreSQL and creates indexes and CHECKs.
-* `seed.sql` executes after schema and populates realistic data; referential integrity holds.
-* README files show exact commands to run.
-
-# Nice-to-haves (optional later)
-
-* Add `cancellations` and `refunds` tables for audit.
-* Switch `status` columns to PostgreSQL enums.
-* Add `availability` table for per-day pricing and blocking.
-* Separate `address` into its own table if needed for analytics.
