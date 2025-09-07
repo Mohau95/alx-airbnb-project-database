@@ -8,9 +8,6 @@ alx-airbnb-database/
 └── database-script-0x02/
     ├── seed.sql
     └── README.md
-```
-
----
 
 # ERD/requirements.md
 
